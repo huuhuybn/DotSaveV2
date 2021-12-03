@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="<%=page.lang %>" class="has-navbar-fixed-top">
+<head>
+    <%- partial('common/head') %>
+</head>
+<body>
+    <%- partial('common/navbar', { page }) %>
+
+    <%- partial('common/box') %>
+    <%- body %>
+
+
+
+    <%- partial('common/footer') %>
+    <%- partial('common/scripts') %>
+
+    <% if (has_config('search.type')) { %>
+    <%- partial('search/' + get_config('search.type')) %>
+    <% } %>
+</body>
+</html>
