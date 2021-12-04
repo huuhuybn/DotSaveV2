@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 /* GET home page. */
-router.get('/', express.static('template/public'));
+router.post('/downloader', function (req, res) {
+
+});
 
 module.exports = router;
